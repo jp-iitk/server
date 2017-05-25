@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>API Tester</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div style="border:1px solid black; padding : 10px">
+            <div>
+                <h2 style="text-align: left ; margin-bottom : 20px">Users</h2>
+                <div class="form-inline">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Jyoti Prakash">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Contact</label>
+                        <input type="text" class="form-control" name="contact" id="contact" placeholder="1234567890">
+                    </div>
+                    <button id="adduser" class="btn btn-default">Add User</button>
+                    <button id="displayusers" class="btn btn-default">Show Users</button>
+                </div>
+            </div>
+
+            <div style="width : 500px" id="showusers">
+                <p id="url"></p>
+            </div>
+        </div>
+
+        <div style="border:1px solid black; padding : 10px ; margin-top : 10px">
+            <div>
+                <h2 style="text-align: left ; margin-bottom : 20px">Items</h2>
+                <div class="form-inline">
+                    <div class="form-group">
+                        <label for="itemName">Item Name</label>
+                        <input type="text" class="form-control" name="itemName" id="itemName" placeholder="Pizza">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="text" class="form-control" name="price" id="price" placeholder="250">
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">Rating</label>
+                        <input type="text" class="form-control" name="rating" id="rating" placeholder="4.5">
+                    </div>
+                    <button id="additem" class="btn btn-default">Add Item</button>
+                    <button id="displayitems" class="btn btn-default">Show Items</button>
+                </div>
+            </div>
+
+            <div style="width : 500px" id="showitems">
+                <p id="url"></p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>

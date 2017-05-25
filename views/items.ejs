@@ -1,0 +1,18 @@
+<div style="margin : 10px">
+    <table class="table">
+        <tr>
+            <th>Item</th>
+            <th>Price</th> 
+            <th>Rating</th> 
+        </tr>
+        <% for(var i=0;i<items.length;i++){ %>
+        <tr>
+            <td><%= items[i].itemName %></td>
+            <td class="mob"><%= items[i].price %></td>
+            <td ><%= items[i].rating %></td>
+            <td><i class="glyphicon glyphicon-remove"></i></td> 
+        </tr>
+        <% } %>
+    </table>
+    <button class="btn btn-success" id="hideitems">Hide</button>
+</div>

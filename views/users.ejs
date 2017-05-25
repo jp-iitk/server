@@ -1,0 +1,17 @@
+
+<div style="margin : 10px">
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Contact</th> 
+        </tr>
+        <% for(var i=0;i<users.length;i++){ %>
+        <tr>
+            <td><%= users[i].name %></td>
+            <td class="mob"><%= users[i].contact %></td>
+            <td><i class="glyphicon glyphicon-remove"></i></td> 
+        </tr>
+        <% } %>
+    </table>
+    <button class="btn btn-success" id="hideusers">Hide</button>
+</div>
